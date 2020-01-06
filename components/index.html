@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COMPONENTS</title>
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
+    <style>
+      body{
+        padding-top: 80px;
+      }
+      .component{
+        padding: 10px
+      }
+      .card{
+        box-shadow: 0px 5px 10px #aaa;
+        transition: all .8s ease;
+        padding: 5px;
+      }
+      .card:hover{
+        transform: translate(0,5px);
+        box-shadow: 0px 2px 2px #aaa
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <a class="navbar-brand" href="./">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="/about">About</a>
+          <a class="nav-item nav-link active" href="/components">Components</a>
+          <a class="nav-item nav-link" href="/instructions">Instructions</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+
+      </div>
+    </div>
+
+    <script src="../js/jquery.js"></script>
+    <script src="./js/libs/three.min.js"></script>
+    <script src="./js/libs/MTLLoader.js"></script>
+    <script src="./js/libs/objloader.js"></script>
+    <script src="./js/libs/OrbitControls.js"></script>
+    <script src="./js/libs/dat.min.js"></script>
+    <script>
+        let params = new URLSearchParams(document.location.search.substring(1));
+        let name = params.get("name");
+        if(name){
+            $('.row').append(`<div class='col-md-12'>${name}</div>`)
+        } else{
+            for(i=0;i<9;i++){
+              $('.row').append(
+              `<div class="col-md-4 component">
+                <div class="card">
+                  <img src="./images/test.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">go to componetn</a>
+                  </div>
+                </div>
+              </div>
+              `
+            )
+            }
+        }
+    </script>
+</body>
+</html>
