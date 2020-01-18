@@ -3,31 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <title>ABOUT</title>
-    <link rel="stylesheet" href="../style/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/main.css">
     <style>
       body{
         padding-top: 80px;
+        background: #e0e0e0
+      }
+      h1{
+        text-align: center;
+        position: relative;
+        padding: 20px;
+      }
+      h1::after, h1::before{
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0);
+        height: 5px;
+        background: #222
+      }
+      h1::before{
+        bottom: -2px;
+        width: 40%;
+      }
+      h1::after{
+        bottom: -10px;
+        width: 25%;
+        background: #0080ff
+
+      }
+
+      .cards{
+        min-heigh: 300vh;
+        margin: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items:center;
+        padding: 10px;
+        border-right: 10px solid #222;
+        /*border-bottom: 10px solid #222;*/
+        position: relative;
+        padding-top: 80px;
+      }
+      .supervisors-cards{
+        margin-bottom: 0;
+        border-bottom: 0;
+      }
+      .team-cards{
+        margin-top: 0;
+      }
+      .card-container{
+        width: 400px;
+        margin: 10px;
+        height: 150px;
+        border: 1px solid #aaa;
+        padding:5px;
+        box-shadow: 0 0 8px #888;
+        position: relative;
+        overflow: hidden;
+      }
+      .card-container::after{
+        position: absolute;
+        content: '';
+        top: 0;left:0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transition: all .5s ease;
+        background: linear-gradient(35deg, transparent, #0080ff, transparent);
+      }
+      .section-title{
+        position: absolute;
+        top:0;
+        right:0;
+        min-width: 300px;
+        background: #222;
+        padding: 10px 20px;
+        color: #ddd;
+        text-align: center;
+      }
+      .section-title::after{
+        content: '';
+        position: absolute;
+        left: 0;bottom: 0;
+        width: 7px;
+        height: 100%;
+        background: #0080ff;
+      }
+      .card{
+        width: 100%;
+        height:100%;
+        background: #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .avatar{
+        width: 150px;
+        height: 140px;
+      }
+      .info{
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        direction: rtl;
+      }
+      .info h2{
+        font-family: sans-serif
+      }
+      .card-container:hover:after{
+        transform: rotate(360deg);
+        transition: all 3s ease;
       }
     </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-    <a class="navbar-brand" href="./">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link active" href="/about">About</a>
-        <a class="nav-item nav-link" href="/components">Components</a>
-        <a class="nav-item nav-link" href="/instructions">Instructions</a>
+  <nav class="nav-container">
+    <div class="toggle-nav" id="toggle-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-bar" id="nav-bar" data-toggle="hidden">
+      <li class="nav-item"><a href="/">الرئيسية</a></li>
+      <li class="nav-item active"><a href="/about">من نحن</a></li>
+      <li class="nav-item"><a href="/components">المكونات</a></li>
+      <li class="nav-item"><a href="/instructions">التعلمات</a></li>
+      <li class="nav-item"><a href="/download">تحميل</a></li>
+    </ul>
+  </nav>
+    <h1>من نحن</h1>
+  <div class="supervisors-cards cards">
+    <h2 class="section-title">المشرفين</h2>
+    <div class="card-container">
+      <div class="card"><img class="avatar" src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=400&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="avatar"/>
+        <div class="info">
+          <h2>Ahmad Fathy</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
       </div>
     </div>
-  </nav>
-  <div class="bg-info">test</div>
+    <div class="card-container">
+      <div class="card"><img class="avatar" src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=400&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="avatar"/>
+        <div class="info">
+          <h2>Ahmad Fathy</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="team-cards cards">
+    <h2 class="section-title">الفريق</h2>
+    <div class="card-container">
+      <div class="card"><img class="avatar" src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=400&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="avatar"/>
+        <div class="info">
+          <h2>Ahmad Fathy</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card"><img class="avatar" src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=400&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="avatar"/>
+        <div class="info">
+          <h2>Ahmad Fathy</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card"><img class="avatar" src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=400&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="avatar"/>
+        <div class="info">
+          <h2>Ahmad Fathy</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+      </div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img class="avatar" src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=400&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="avatar"/>
+          <div class="info">
+            <h2>Ahmad Fathy</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img class="avatar" src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=400&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="avatar"/>
+          <div class="info">
+            <h2>Ahmad Fathy</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card"><img class="avatar" src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=400&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="avatar"/>
+          <div class="info">
+            <h2>Ahmad Fathy</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <script src="../js/jquery.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
+    <footer>
+      <p>جميع الحقوق محفوظة &copy; 2020</p>
+    </footer>
+  <script src="../js/main.js"></script>
 </body>
 </html>

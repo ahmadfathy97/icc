@@ -3,54 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <title>COMPONENTS</title>
-    <link rel="stylesheet" href="../style/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/main.css">
     <style>
-      body{
-        padding-top: 80px;
-      }
-      .component{
-        padding: 10px
-      }
-      .card{
-        box-shadow: 0px 5px 10px #aaa;
-        transition: all .8s ease;
-        padding: 5px;
-      }
-      .card:hover{
-        transform: translate(0,5px);
-        box-shadow: 0px 2px 2px #aaa
-      }
+    body{
+      padding-top: 80px;
+    }
+    .container{
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    .card{
+      width: 300px;
+      padding: 3px 5px 10px;
+      margin: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      box-shadow: 0 0 5px #222
+    }
+    .card img{
+      width: 100%;
+      height: 300px;
+    }
+    .card p{
+      text-align: center;
+      font-size: 22px;
+      margin: 20px auto;
+    }
+    .card a{
+      text-decoration: none;
+      background: #0080ff;
+      color: #222;
+      border: 1px solid #222;
+      padding: 8px;
+      font-weight: 900;
+      text-align: center;
+      width: 90%;
+      transition: all .8s ease;
+      box-shadow: 0px 2px 5px #000
+    }
+    .card a:hover{
+      color: #fff;
+      background: #222;
+      box-shadow: 0;
+    }
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-      <a class="navbar-brand" href="./">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="/about">About</a>
-          <a class="nav-item nav-link active" href="/components">Components</a>
-          <a class="nav-item nav-link" href="/instructions">Instructions</a>
-        </div>
+    <nav class="nav-container">
+      <div class="toggle-nav" id="toggle-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
+      <ul class="nav-bar" id="nav-bar" data-toggle="hidden">
+        <li class="nav-item"><a href="/">الرئيسية</a></li>
+        <li class="nav-item"><a href="/about">من نحن</a></li>
+        <li class="nav-item active"><a href="/components">المكونات</a></li>
+        <li class="nav-item"><a href="/instructions">التعلمات</a></li>
+        <li class="nav-item"><a href="/download">تحميل</a></li>
+      </ul>
     </nav>
     <div id="my-gui-container" style="position:fixed;top:55px;right:0;width: 245px;z-index:99999"></div>
     <div class="container">
-      <div class="row">
-
-      </div>
     </div>
 
-    <script src="../js/jquery.js"></script>
+    <footer>
+      <p>جميع الحقوق محفوظة &copy; 2020</p>
+    </footer>
     <script src="./js/libs/three.min.js"></script>
     <script src="./js/libs/MTLLoader.js"></script>
     <script src="./js/libs/objloader.js"></script>
     <script src="./js/libs/OrbitControls.js"></script>
     <script src="./js/libs/dat.min.js"></script>
     <script src="./js/loadObject.js"></script>
+    <script src="../js/main.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

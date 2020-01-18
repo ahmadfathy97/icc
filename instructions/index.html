@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>INSTRUCTIONS</title>
-    <link rel="stylesheet" href="../style/bootstrap.min.css">
-    <style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/main.css">
+    <style media="screen">
       body{
         padding-top: 80px;
       }
     </style>
   </head>
-
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-      <a class="navbar-brand" href="./">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="/about">About</a>
-          <a class="nav-item nav-link" href="/components">Components</a>
-          <a class="nav-item nav-link active" href="/instructions">Instructions</a>
-        </div>
+    <nav class="nav-container">
+      <div class="toggle-nav" id="toggle-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
+      <ul class="nav-bar" id="nav-bar" data-toggle="hidden">
+        <li class="nav-item"><a href="/">الرئيسية</a></li>
+        <li class="nav-item"><a href="/about">من نحن</a></li>
+        <li class="nav-item"><a href="/components">المكونات</a></li>
+        <li class="nav-item active"><a href="/instructions">التعلمات</a></li>
+        <li class="nav-item"><a href="/download">تحميل</a></li>
+      </ul>
     </nav>
     <p class="bg-info">Instructions</p>
 
-    <script src="../js/jquery.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+    <footer>
+      <p>جميع الحقوق محفوظة &copy; 2020</p>
+    </footer>
+    <script src="../js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ABOUT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/main.css">
+    <style>
+      body{
+        padding-top: 80px;
+        background: #e0e0e0
+      }
+      h1{
+        text-align: center;
+        position: relative;
+        padding: 20px;
+      }
+      h1::after, h1::before{
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0);
+        height: 5px;
+        background: #222
+      }
+      h1::before{
+        bottom: -2px;
+        width: 40%;
+      }
+      h1::after{
+        bottom: -10px;
+        width: 25%;
+        background: #0080ff
+
+      }
+      .container{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+      .card{
+        width: 250px;
+        padding: 3px 5px 10px;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 0 0 5px #222
+      }
+      .card img{
+        width: 100%;
+        height: 250px;
+      }
+      .card p{
+        text-align: center;
+        font-size: 22px;
+        margin: 20px auto;
+      }
+      .card a{
+        text-decoration: none;
+        background: #0080ff;
+        color: #222;
+        border: 1px solid #222;
+        padding: 8px;
+        font-weight: 900;
+        text-align: center;
+        width: 90%;
+        transition: all .8s ease;
+        box-shadow: 0px 2px 5px #000
+      }
+      .card a:hover{
+        color: #fff;
+        background: #222;
+        box-shadow: 0;
+      }
+    </style>
+</head>
+<body>
+  <nav class="nav-container">
+    <div class="toggle-nav" id="toggle-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-bar" id="nav-bar" data-toggle="hidden">
+      <li class="nav-item"><a href="/">الرئيسية</a></li>
+      <li class="nav-item"><a href="/about">من نحن</a></li>
+      <li class="nav-item"><a href="/components">المكونات</a></li>
+      <li class="nav-item"><a href="/instructions">التعلمات</a></li>
+      <li class="nav-item active"><a href="/download">تحميل</a></li>
+    </ul>
+  </nav>
+    <h1>تحميل</h1>
+    <div class="container">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="avatar">
+        <p>تحميل نسخة اوفلاين للموقع لنظام تشغيل الويندوس</p>
+        <a href="" download>تحميل</a>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="avatar">
+        <p>تحميل نسخة اوفلاين للموقع لنظام تشغيل الويندوس</p>
+        <a href="" download>تحميل</a>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="avatar">
+        <p>تحميل نسخة اوفلاين للموقع لنظام تشغيل الويندوس</p>
+        <a href="" download>تحميل</a>
+      </div>
+    </div>
+    <footer>
+      <p>جميع الحقوق محفوظة &copy; 2020</p>
+    </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

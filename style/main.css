@@ -1,0 +1,117 @@
+*,*::after, *::before{padding: 0;margin: 0;box-sizing: border-box;}
+.nav-container{
+  position: fixed;
+  width: 100%;
+  top:0;
+  z-index: 9999;
+  background: rgba(34, 34, 34, 0.8)
+}
+.nav-bar{
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
+.toggle-nav{
+  display: none;
+  float: left;
+  margin: 5px;
+  padding:2px;
+  font-size: 24px;
+  /*background: rgba(0, 128, 255,.6);*/
+  cursor: pointer;
+}
+.toggle-nav span{
+  display: block;
+  width: 24px;
+  margin: 2px auto;
+  height: 4px;
+  background: #ddd;
+  transition: transform .6s ease;
+}
+.toggle-nav.active-btn span{
+  margin:0;
+}
+.toggle-nav.active-btn span:nth-child(4),
+.toggle-nav.active-btn span:nth-child(1){
+  opacity: 0
+}
+.toggle-nav.active-btn span:nth-child(3){
+  transform: rotateZ(45deg) translate(-1px, -1px);
+}
+.toggle-nav.active-btn span:nth-child(2){
+  transform: rotateZ(-45deg) translate(-1px, 1px);
+}
+.nav-item{
+  list-style-type: none;
+  min-width: 120px;
+  margin: 5px 10px;
+  border-radius: 10px;
+  /*background: rgba(0,0,0,.6);*/
+}
+.nav-item:hover, .active{
+  background: #0080ff;
+}
+.nav-item a{
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  padding: 5px 8px;
+  text-decoration: none;
+  color: #e6e6e6;
+}
+@media(max-width: 920px){
+  .nav-bar{
+    height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    align-items:flex-end;
+  }
+  .toggle-nav{
+    display:block;
+  }
+}
+.show{
+  height: auto
+}
+
+/****/
+.header-container{
+  min-height: 100vh;
+  background: url('../assets/headerbg.jpg');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.header{
+  min-height: 100vh;
+  background: rgba(0,0,0, .6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #dcdcdc;
+  padding: 50px;
+}
+.header h1{
+  font-size: 45px;
+  margin: 30px auto;
+}
+.header p{
+  text-align: center;
+  font-size: 30px;
+}
+
+
+/***/
+footer{
+  background: #222;
+  padding: 10px;
+  margin-top: 30px;
+  position: relative;
+  bottom: 0;
+}
+footer p{
+  color: #ddd;
+  text-align: center;
+  font-size: 20px;
+}
