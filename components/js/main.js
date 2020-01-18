@@ -26,16 +26,15 @@ if(name){
   .then((data)=>{
     data.components.forEach((comp)=>{
       container.innerHTML +=
-      `<div class="col-md-4 component">
+      `
         <div class="card">
           <img src="./images/test.jpg" class="card-img-top" width="200" height="200" alt="">
           <div class="card-body">
-            <h5 class="card-title">${comp.name}</h5>
+            <h3 class="card-title">${comp.name}</h3>
             <p class="card-text">${comp.description}</p>
-            <a href="/components/?name=${comp.id}" class="btn btn-primary">go to componetn</a>
+            <a href="/components/?name=${comp.id}" class="btn btn-primary">شاهد المكون 3D</a>
           </div>
         </div>
-      </div>
       `
     })
   })

@@ -1,10 +1,11 @@
 function loadobject (mtlFile, objFile){
   var scene = new THREE.Scene();
   var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000);
-  var renderer = new THREE.WebGLRenderer();
+  var renderer = new THREE.WebGLRenderer({alpha: true});
   controls = new THREE.OrbitControls(camera, renderer.domElement);
   renderer.setSize(window.innerWidth, window.innerHeight);
-  document.body.appendChild( renderer.domElement );
+  var objContainer = document.getElementById('obj-container');
+  objContainer.appendChild( renderer.domElement );
 
   var obj;
   var mtl = new THREE.MTLLoader()
@@ -37,7 +38,7 @@ function loadobject (mtlFile, objFile){
 
   var objProperties = {
     color: 0x0080aa,
-    bg: 0xffffff,
+    bg: '#d4a047',
     autoRotation: true,
     title: 'Iron Man',
     lightColor: 0xffffff,
@@ -48,7 +49,7 @@ function loadobject (mtlFile, objFile){
   scene.add( ambientLight );
 
   //scene background
-  renderer.setClearColor(objProperties.bg);
+document.body.style.background = objProperties.bg;
 
   camera.position.z = 5;
 
@@ -91,11 +92,11 @@ function loadobject (mtlFile, objFile){
       };
 
       var f3 = gui.addFolder('scene');
-      f3.add(objProperties, 'title').onChange(
-        function (e){
-          document.querySelector('h1').textContent = e;
-        }
-      )
+      // f3.add(objProperties, 'title').onChange(
+      //   function (e){
+      //     document.querySelector('h1').textContent = e;
+      //   }
+      // )
       // f3.addColor(objProperties, 'color').onChange(
       //   function(e){
       //     obj.material.color.set( objProperties.color );
@@ -103,7 +104,7 @@ function loadobject (mtlFile, objFile){
       // )
       f3.addColor(objProperties, 'bg').onChange(
         function(e){
-          renderer.setClearColor( objProperties.bg );
+          document.body.style.background = objProperties.bg;
         }
       )
       f3.add(objProperties, 'autoRotation')

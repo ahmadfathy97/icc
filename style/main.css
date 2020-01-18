@@ -1,4 +1,7 @@
 *,*::after, *::before{padding: 0;margin: 0;box-sizing: border-box;}
+body{
+  padding-top: 45px;
+}
 .nav-container{
   position: fixed;
   width: 100%;
@@ -76,30 +79,7 @@
 }
 
 /****/
-.header-container{
-  min-height: 100vh;
-  background: url('../assets/headerbg.jpg');
-  background-size: 100% 100%;
-  background-attachment: fixed;
-}
-.header{
-  min-height: 100vh;
-  background: rgba(0,0,0, .6);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: #dcdcdc;
-  padding: 50px;
-}
-.header h1{
-  font-size: 45px;
-  margin: 30px auto;
-}
-.header p{
-  text-align: center;
-  font-size: 30px;
-}
+
 
 
 /***/

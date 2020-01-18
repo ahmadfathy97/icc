@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/main.css">
     <style>
-    body{
-      padding-top: 80px;
-    }
     .container{
       min-height: 100vh;
       display: flex;
@@ -25,26 +22,59 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      box-shadow: 0 0 5px #222
+      box-shadow: 0 0 5px #222;
+      direction: rtl
     }
     .card img{
       width: 100%;
       height: 300px;
     }
-    .card p{
+    /* .card-body {
+      width: 100%;
+    } */
+    .card-body .card-title{
       text-align: center;
       font-size: 22px;
+      width:90%;
       margin: 20px auto;
+      border-bottom: 5px solid #222;
+      position: relative;
     }
-    .card a{
-      text-decoration: none;
+    .card-body .card-title:after{
+      content: '';
+      width:90%;
+      position: absolute;bottom: -13px;left: 50%;
+      transform: translate(-50%, 0);
+      height: 5px;
       background: #0080ff;
-      color: #222;
+    }
+    .card-body p{
+      text-align: center;
+      font-size: 18px;
+      margin: 20px auto;
+      height: 180px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      position: relative;
+    }
+    .card-body p:after{
+      content: '';
+      position: absolute;bottom: -5px;left: 0;
+      width: 100%;
+      box-shadow: 0px 0px 15px 5px #000;
+      height: 4px;
+
+    }
+    .card .card-body a{
+      text-decoration: none;
+      display: block;
+      background: #0080ff;
+      color: #ddd;
       border: 1px solid #222;
       padding: 8px;
       font-weight: 900;
       text-align: center;
-      width: 90%;
+      width: 100%;
       transition: all .8s ease;
       box-shadow: 0px 2px 5px #000
     }
@@ -74,7 +104,9 @@
     <div id="my-gui-container" style="position:fixed;top:55px;right:0;width: 245px;z-index:99999"></div>
     <div class="container">
     </div>
-
+    <div id="obj-container">
+      
+    </div>
     <footer>
       <p>جميع الحقوق محفوظة &copy; 2020</p>
     </footer>
