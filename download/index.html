@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ABOUT</title>
+    <title>DOWNLOAD</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/main.css">
     <style>
@@ -33,7 +33,7 @@
 
       }
       .container{
-        min-height: 100vh;
+        min-height: 90vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -48,7 +48,11 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        box-shadow: 0 0 5px #222
+        box-shadow: 0 0 5px #222;
+        transition: all .8s ease
+      }
+      .card:hover{
+        transform: translate(0,10px);
       }
       .card img{
         width: 100%;

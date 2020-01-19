@@ -5,6 +5,63 @@
     <title>INSTRUCTIONS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/main.css">
+    <style>
+      h1{
+        text-align: center;
+        position: relative;
+        padding: 20px;
+      }
+      h1::after, h1::before{
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0);
+        height: 5px;
+        background: #222
+      }
+      h1::before{
+        bottom: -2px;
+        width: 40%;
+      }
+      h1::after{
+        bottom: -10px;
+        width: 25%;
+        background: #0080ff
+
+      }
+      .container{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 20px;
+      }
+      .rule{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+        min-height: 100px;
+        background: #eee;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 20px auto;
+        border-radius: 20px;
+        box-shadow: 0px 5px 12px #222
+      }
+      .rule p{
+        color: #222;
+        font-size: 22px;
+        width: 350px;
+        text-align: center
+      }
+      .rule img{
+        width: 200px;
+        height: 200px;
+      }
+    </style>
   </head>
   <body>
     <nav class="nav-container">
@@ -22,8 +79,21 @@
         <li class="nav-item"><a href="/download">تحميل</a></li>
       </ul>
     </nav>
-    <p class="bg-info">Instructions</p>
-
+    <h1>التعليمات</h1>
+    <div class="container">
+      <div class="rule">
+        <img src="./images/left-click.png" />
+        <p>لتدوير المجسم اضغط على الزرار الايسر بالفأرة مع السحب في اي اتجاه</p>
+      </div>
+      <div class="rule">
+        <img src="./images/right-click.png" />
+        <p>لتحريك المجسم من مكانه اضغط على الزرار الايمن بالفأرة مع السحب في اي اتجاه</p>
+      </div>
+      <div class="rule">
+        <img src="./images/roller.png" />
+        <p>لتكبير وتصغير المجسم أدر بكرة الفأرة لاعلى للتكبير ولاسفل للتصغير</p>
+      </div>
+    </div>
     <footer>
       <p>جميع الحقوق محفوظة &copy; 2020</p>
     </footer>

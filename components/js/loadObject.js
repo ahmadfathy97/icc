@@ -38,7 +38,7 @@ function loadobject (mtlFile, objFile){
 
   var objProperties = {
     color: 0x0080aa,
-    bg: '#d4a047',
+    bg: '#ddd',
     autoRotation: true,
     title: 'Iron Man',
     lightColor: 0xffffff,
