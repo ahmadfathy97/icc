@@ -5,53 +5,7 @@
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
-    <style>
-      body{
-        padding-top: 0;
-      }
-      .header-container{
-        min-height: 100vh;
-        background: url('../assets/headerbg.jpg');
-        background-size: 100% 100%;
-        background-attachment: fixed;
-      }
-      .header{
-        min-height: 100vh;
-        background: rgba(0,0,0, .6);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        color: #dcdcdc;
-        padding: 50px;
-      }
-      .header h1{
-        font-size: 45px;
-        margin: 30px auto;
-      }
-      .header p{
-        text-align: center;
-        font-size: 30px;
-      }
-      .video-container{
-        /* margin: 50px auto; */
-        min-height: 30vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #ddd;
-        padding: 50px 10px;
-      }
-      .video-container video{
-        width: 80%;
-        height: auto;
-        cursor: pointer;
-        box-shadow: 0px 5px 15px #222;
-      }
-      footer{
-        margin-top: 0 !important
-      }
-    </style>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
   <nav class="nav-container">
@@ -86,6 +40,21 @@
   <footer>
     <p>جميع الحقوق محفوظة &copy; 2020</p>
   </footer>
+  <div class="load-wrapp" id="load-wrapp">
+    <svg width="0" height="0">
+      <defs>
+        <filter id="filter">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blured"></feGaussianBlur>
+          <feColorMatrix in="blured" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="weirdNumbers"></feColorMatrix>
+          <feComposite in="SourceGraphic" in2="weirdNumbers" operator="atop"></feComposite>
+        </filter>
+      </defs>
+      <div class="loader">
+        <div class="small-circle"></div>
+        <div class="big-circle"></div>
+      </div>
+    </svg>
+  </div>
   <script src="./js/main.js"></script>
 </body>
 </html>

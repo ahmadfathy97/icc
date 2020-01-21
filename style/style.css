@@ -1,0 +1,46 @@
+body{
+  padding-top: 0;
+}
+.header-container{
+  min-height: 100vh;
+  background: url('../assets/headerbg.jpg');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.header{
+  min-height: 100vh;
+  background: rgba(0,0,0, .6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #dcdcdc;
+  padding: 50px;
+  word-wrap: break-word;
+}
+.header h1{
+  font-size: 36px;
+  margin: 30px auto;
+}
+.header p{
+  text-align: center;
+  font-size: 26px;
+}
+.video-container{
+  /* margin: 50px auto; */
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ddd;
+  padding: 50px 10px;
+}
+.video-container video{
+  width: 80%;
+  height: auto;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px #222;
+}
+footer{
+  margin-top: 0 !important
+}

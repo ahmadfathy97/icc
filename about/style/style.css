@@ -1,0 +1,115 @@
+body{
+  background: #e0e0e0
+}
+h1{
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+h1::after, h1::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  height: 5px;
+  background: #222
+}
+h1::before{
+  bottom: -2px;
+  width: 40%;
+}
+h1::after{
+  bottom: -10px;
+  width: 25%;
+  background: #0080ff
+
+}
+
+.cards{
+  min-heigh: 300vh;
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items:center;
+  padding: 10px;
+  border-right: 10px solid #222;
+  /*border-bottom: 10px solid #222;*/
+  position: relative;
+  padding-top: 80px;
+}
+.supervisors-cards{
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.team-cards{
+  margin-top: 0;
+}
+.card-container{
+  width: 400px;
+  margin: 10px;
+  height: 150px;
+  border: 1px solid #aaa;
+  padding:5px;
+  box-shadow: 0 0 8px #888;
+  position: relative;
+  overflow: hidden;
+}
+.card-container::after{
+  position: absolute;
+  content: '';
+  top: 0;left:0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all .5s ease;
+  background: linear-gradient(35deg, transparent, #0080ff, transparent);
+}
+.section-title{
+  position: absolute;
+  top:0;
+  right:0;
+  min-width: 300px;
+  background: #222;
+  padding: 10px 20px;
+  color: #ddd;
+  text-align: center;
+}
+.section-title::after{
+  content: '';
+  position: absolute;
+  left: 0;bottom: 0;
+  width: 7px;
+  height: 100%;
+  background: #0080ff;
+}
+.card{
+  width: 100%;
+  height:100%;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatar{
+  width: 150px;
+  height: 140px;
+}
+.info{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
+}
+.info h2{
+  font-family: sans-serif
+}
+.card-container:hover:after{
+  transform: rotate(360deg);
+  transition: all 3s ease;
+}
+@media(max-width: 600px){
+  .cards{
+    margin: 50px 2px;
+  }
+}

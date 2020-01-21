@@ -1,0 +1,52 @@
+{
+  "team":[
+    {
+      "name": "ahmad fathy",
+      "job": "full stack dev",
+      "image": "test.jpg",
+      "position": "member"
+    },
+    {
+      "name": "ahmad fathy",
+      "job": "full stack dev",
+      "image": "test.jpg",
+      "position": "member"
+    },
+    {
+      "name": "ahmad fathy",
+      "job": "full stack dev",
+      "image": "test.jpg",
+      "position": "member"
+    },
+    {
+      "name": "ahmad fathy",
+      "job": "full stack dev",
+      "image": "test.jpg",
+      "position": "member"
+    },
+    {
+      "name": "ahmad fathy",
+      "job": "full stack dev",
+      "image": "test.jpg",
+      "position": "member"
+    },
+    {
+      "name": "ahmad fathy",
+      "job": "full stack dev",
+      "image": "test.jpg",
+      "position": "member"
+    },
+    {
+      "name": "ahmad fathy",
+      "job": "full stack dev",
+      "image": "test.jpg",
+      "position": "supervisor"
+    },
+    {
+      "name": "ahmad fathy",
+      "job": "full stack dev",
+      "image": "test.jpg",
+      "position": "supervisor"
+    },
+  ]
+}

@@ -1,5 +1,6 @@
 var toggleNav = document.getElementById('toggle-nav'),
-    navBar = document.getElementById('nav-bar');
+    navBar = document.getElementById('nav-bar'),
+    load = document.getElementById('load-wrapp')
 toggleNav.onclick = ()=>{
   console.log(565656);
   if(navBar.dataset.toggle == "hidden"){
@@ -11,4 +12,8 @@ toggleNav.onclick = ()=>{
     navBar.dataset.toggle = "hidden"
     toggleNav.classList.remove('active-btn')
   }
+}
+window.onload = ()=>{
+  document.body.style.overflow = 'auto';
+  load.style.display = 'none';
 }

@@ -1,0 +1,72 @@
+body{
+  background: #e0e0e0
+}
+h1{
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+h1::after, h1::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  height: 5px;
+  background: #222
+}
+h1::before{
+  bottom: -2px;
+  width: 40%;
+}
+h1::after{
+  bottom: -10px;
+  width: 25%;
+  background: #0080ff
+
+}
+.container{
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.card{
+  width: 250px;
+  padding: 3px 5px 10px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0 5px #222;
+  transition: all .8s ease
+}
+.card:hover{
+  transform: translate(0,10px);
+}
+.card img{
+  width: 100%;
+  height: 250px;
+}
+.card p{
+  text-align: center;
+  font-size: 22px;
+  margin: 20px auto;
+}
+.card a{
+  text-decoration: none;
+  background: #0080ff;
+  color: #ddd;
+  padding: 8px;
+  font-weight: 900;
+  text-align: center;
+  width: 90%;
+  transition: all .8s ease;
+  box-shadow: 0px 2px 5px #000
+}
+.card a:hover{
+  background: #222;
+  box-shadow: 0;
+}

@@ -5,85 +5,7 @@
     <title>COMPONENTS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/main.css">
-    <style>
-    .container{
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 20px;
-    }
-    .card{
-      width: 300px;
-      padding: 3px 5px 10px;
-      margin: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      box-shadow: 0 0 5px #222;
-      direction: rtl
-    }
-    .card img{
-      width: 100%;
-      height: 300px;
-    }
-    /* .card-body {
-      width: 100%;
-    } */
-    .card-body .card-title{
-      text-align: center;
-      font-size: 22px;
-      width:90%;
-      margin: 20px auto;
-      border-bottom: 5px solid #222;
-      position: relative;
-    }
-    .card-body .card-title:after{
-      content: '';
-      width:90%;
-      position: absolute;bottom: -13px;left: 50%;
-      transform: translate(-50%, 0);
-      height: 5px;
-      background: #0080ff;
-    }
-    .card-body p{
-      text-align: center;
-      font-size: 18px;
-      margin: 20px auto;
-      height: 180px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      position: relative;
-    }
-    .card-body p:after{
-      content: '';
-      position: absolute;bottom: -5px;left: 0;
-      width: 100%;
-      box-shadow: 0px 0px 15px 5px #000;
-      height: 4px;
-
-    }
-    .card .card-body a{
-      text-decoration: none;
-      display: block;
-      background: #0080ff;
-      color: #ddd;
-      border: 1px solid #222;
-      padding: 8px;
-      font-weight: 900;
-      text-align: center;
-      width: 100%;
-      transition: all .8s ease;
-      box-shadow: 0px 2px 5px #000
-    }
-    .card a:hover{
-      color: #fff;
-      background: #222;
-      box-shadow: 0;
-    }
-    </style>
+    <link rel="stylesheet" href="./style/style.css">
   </head>
   <body>
     <nav class="nav-container">
@@ -105,11 +27,40 @@
     <div class="container">
     </div>
     <div id="obj-container">
-      
+
+    </div>
+    <button class="infoBtn" id="infoBtn">معلومات عن المكون</button>
+    <div class="info" id="info">
+      <div class="head">
+        <h2 id="objName"></h2>
+        <span id="closeInfo">X</span>
+      </div>
+      <p id="details">  </p>
     </div>
     <footer>
       <p>جميع الحقوق محفوظة &copy; 2020</p>
     </footer>
+    <div class="load-wrapp" id="load-wrapp">
+      <svg width="0" height="0">
+        <defs>
+          <filter id="filter">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blured"></feGaussianBlur>
+            <feColorMatrix in="blured" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="weirdNumbers"></feColorMatrix>
+            <feComposite in="SourceGraphic" in2="weirdNumbers" operator="atop"></feComposite>
+          </filter>
+        </defs>
+        <div class="loader">
+          <div class="small-circle"></div>
+          <div class="big-circle"></div>
+        </div>
+      </svg>
+    </div>
+    <div class="comp-load" id="comp-load">
+      <p id="load-percent">0%</p>
+      <div class="bar">
+        <div class="fill"></div>
+      </div>
+    </div>
     <script src="./js/libs/three.min.js"></script>
     <script src="./js/libs/MTLLoader.js"></script>
     <script src="./js/libs/objloader.js"></script>
