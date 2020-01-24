@@ -89,7 +89,7 @@ h1::after{
   background: #eee;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .avatar{
   width: 150px;
@@ -98,6 +98,8 @@ h1::after{
 .info{
   padding: 5px;
   display: flex;
+  height: 100%;
+  justify-content: flex-start;
   flex-direction: column;
   direction: rtl;
 }

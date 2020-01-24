@@ -23,7 +23,8 @@
         <li class="nav-item"><a href="/download">تحميل</a></li>
       </ul>
     </nav>
-    <div id="my-gui-container" style="position:fixed;top:55px;right:0;width: 245px;z-index:99999"></div>
+    <h1 id="compHead">المكونات</h1>
+    <h2 class="compName" id="compName"></h2>
     <div class="container">
     </div>
     <div id="obj-container">
@@ -35,11 +36,16 @@
         <h2 id="objName"></h2>
         <span id="closeInfo">X</span>
       </div>
-      <p id="details">  </p>
+      <p id="details"></p>
     </div>
     <footer>
       <p>جميع الحقوق محفوظة &copy; 2020</p>
     </footer>
+    <div id="my-gui-container" class="my-gui-container">
+      <button id="toggleControls" data-toggle="hidden">
+        controls
+      </button>
+    </div>
     <div class="load-wrapp" id="load-wrapp">
       <svg width="0" height="0">
         <defs>

@@ -1,6 +1,8 @@
 let params = new URLSearchParams(document.location.search.substring(1)),
     name = params.get("name"),
+    compHead = document.getElementById('compHead'),
     container = document.getElementsByClassName('container')[0],
+    compName = document.getElementById('compName'),
     infoBtn = document.getElementById('infoBtn'),
     info = document.getElementById('info'),
     objName = document.getElementById('objName'),
@@ -53,7 +55,10 @@ closeInfo.addEventListener('click', closeInfoCon);
 
 
 function details(name, desc){
+  compHead.style.display = "none";
+  compName.style.display = "block";
   infoBtn.style.display = "block";
+  compName.textContent = name.toUpperCase();
   objName.textContent = name;
   objDesc.textContent = desc;
 }
@@ -63,4 +68,18 @@ function openInfoCon() {
 }
 function closeInfoCon(){
   info.style.display = "none";
+}
+
+let controlsBtn = document.getElementById('toggleControls'),
+    guiContainer = document.getElementById('my-gui-container');
+    console.log(guiContainer);
+controlsBtn.addEventListener('click', toggleControls);
+function toggleControls(){
+  if(controlsBtn.dataset.toggle == "hidden"){
+    guiContainer.classList.add('show-controls');
+    controlsBtn.dataset.toggle = "show";
+  }else{
+    guiContainer.classList.remove('show-controls');
+    controlsBtn.dataset.toggle = "hidden";
+  }
 }
