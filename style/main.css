@@ -153,9 +153,6 @@ footer p{
   font-display: swap;
 }
 
-div {
-  font-family: myFirstFont;
-}
 
 @keyframes moving {
   50%{

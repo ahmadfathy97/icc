@@ -47,11 +47,11 @@ function loading(mtlFile, objFile){
 }
 
 let objProperties = {
-  color: '#222222',
-  bg: '#dddddd',
-  autoRotation: true,
-  lightColor: 0xffffff,
-  reset: function (){
+  ['لون النص']: '#222222',
+  ['الخلفية']: '#dddddd',
+  ['الدوران الآلي']: true,
+  ['الإضاءة']: 0xffffff,
+  ['إعادة تعيين']: function (){
     this.color= '#222222';
     this.bg= '#dddddd';
     //this.autoRotation= true;
@@ -74,7 +74,7 @@ camera.position.z = 5;
 function animate() {
 	requestAnimationFrame( animate );
 	renderer.render( scene, camera );
-  if(objProperties.autoRotation){
+  if(objProperties['الدوران الآلي']){
     obj.rotation.y += .005;
   }
 }
@@ -87,7 +87,7 @@ function objControl(obj){
     const gui = new dat.GUI({ autoPlace: false });
 
     //position
-    let f1 = gui.addFolder('position');
+    let f1 = gui.addFolder('الموضع');
     f1.add(obj.position, 'x', obj.position.x - 25, obj.position.x + 25)
     .onChange = function(e){
       changProp(e)
@@ -102,7 +102,7 @@ function objControl(obj){
     };
 
     //rotation
-    let f2 = gui.addFolder('rotation');
+    let f2 = gui.addFolder('الدوران');
     f2.add(obj.rotation, 'x', obj.rotation.x - 5, obj.rotation.x + 5)
     .onChange = function(e){
       changProp(e)
@@ -117,24 +117,24 @@ function objControl(obj){
     };
 
     //scene
-    let f3 = gui.addFolder('scene');
-    f3.add(objProperties, 'autoRotation')
-    f3.addColor(objProperties, 'color').onChange(
+    let f3 = gui.addFolder('المشهد');
+    f3.add(objProperties, ['الدوران الآلي'])
+    f3.addColor(objProperties, ['لون النص']).onChange(
       function(e){
-        document.getElementById('compName').style.color = objProperties.color
+        document.getElementById('compName').style.color = objProperties['لون النص']
       }
     )
-    f3.addColor(objProperties, 'bg').onChange(
+    f3.addColor(objProperties, ['الخلفية']).onChange(
       function(e){
-        document.body.style.background = objProperties.bg;
+        document.body.style.background = objProperties['الخلفية'];
       }
     )
-    f3.addColor( objProperties, 'lightColor').onChange(
+    f3.addColor( objProperties, ['الإضاءة']).onChange(
       function(e){
-        ambientLight.color.setHex( objProperties.lightColor );
+        ambientLight.color.setHex( objProperties['الإضاءة'] );
       }
     );
-    f3.add(objProperties, 'reset')
+    f3.add(objProperties, ['إعادة تعيين'])
     f1.open();
     f2.open();
     f3.open();
