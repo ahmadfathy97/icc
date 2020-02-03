@@ -1,4 +1,4 @@
-*,*::after, *::before{padding: 0;margin: 0;box-sizing: border-box;}
+*,*::after, *::before{padding: 0;margin: 0;box-sizing: border-box;font-family: ElMessiri, cursive;}
 *::-webkit-scrollbar {
   width: .8em;
 }
@@ -73,7 +73,7 @@ body{
 .nav-item a{
   display: block;
   text-align: center;
-  font-size: 22px;
+  font-size: 18px;
   padding: 5px 8px;
   text-decoration: none;
   color: #e6e6e6;
@@ -146,6 +146,17 @@ footer p{
   animation: moving 2s ease infinite;
   z-index: -1;
 }
+
+@font-face {
+  font-family: ElMessiri;
+  src: url('../assets/fonts/ElMessiri.ttf');
+  font-display: swap;
+}
+
+div {
+  font-family: myFirstFont;
+}
+
 @keyframes moving {
   50%{
     transform: translate(-540%, -50%) scale(2,2);

@@ -33,7 +33,7 @@ function loading(mtlFile, objFile){
           document.getElementById('comp-load').style.display = "none";
         },
         function ( xhr ) {
-          let percent = Math.ceil( ( xhr.loaded / xhr.total * 100 ) ) + '%'
+          let percent = Math.ceil( ( xhr.loaded / xhr.total * 100 ), 2 ) + '%'
       		console.log( percent);
           document.getElementById('load-percent').textContent = percent;
           document.querySelector('.fill').style.width = percent;
@@ -51,7 +51,20 @@ let objProperties = {
   bg: '#dddddd',
   autoRotation: true,
   lightColor: 0xffffff,
-  lightHelper: false
+  reset: function (){
+    this.color= '#222222';
+    this.bg= '#dddddd';
+    //this.autoRotation= true;
+    this.lightColor= 0xffffff;
+    document.getElementById('compName').style.color = objProperties.color;
+    document.body.style.background = objProperties.bg;
+    ambientLight.color.setHex( objProperties.lightColor );
+    obj.position.set(0,0,0);
+    obj.rotation.set(0,0,0);
+    // camera.position.z = 5;
+    controls.reset();
+    camera.position.set(0,0,5)
+  }
 };
 let ambientLight = new THREE.AmbientLight( objProperties.lightColor, 0.4 );
 scene.add( ambientLight );
@@ -62,7 +75,7 @@ function animate() {
 	requestAnimationFrame( animate );
 	renderer.render( scene, camera );
   if(objProperties.autoRotation){
-    obj.rotation.y += .01;
+    obj.rotation.y += .005;
   }
 }
 
@@ -105,6 +118,7 @@ function objControl(obj){
 
     //scene
     let f3 = gui.addFolder('scene');
+    f3.add(objProperties, 'autoRotation')
     f3.addColor(objProperties, 'color').onChange(
       function(e){
         document.getElementById('compName').style.color = objProperties.color
@@ -115,18 +129,18 @@ function objControl(obj){
         document.body.style.background = objProperties.bg;
       }
     )
-    f3.add(objProperties, 'autoRotation')
     f3.addColor( objProperties, 'lightColor').onChange(
       function(e){
         ambientLight.color.setHex( objProperties.lightColor );
       }
     );
+    f3.add(objProperties, 'reset')
     f1.open();
     f2.open();
     f3.open();
 
     //gui.close();
-    document.getElementById('my-gui-container').style.display = "block"; 
+    document.getElementById('my-gui-container').style.display = "block";
     let customContainer = document.getElementById('my-gui-container');
     customContainer.appendChild(gui.domElement);
 }
