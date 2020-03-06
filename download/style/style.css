@@ -33,22 +33,28 @@ h1::after{
   padding: 20px;
 }
 .card{
-  width: 250px;
+  width: 450px;
   padding: 3px 5px 10px;
   margin: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  box-shadow: 0 0 5px #222;
   transition: all .8s ease
 }
-.card:hover{
+/* .card:hover{
   transform: translate(0,10px);
-}
+} */
 .card img{
-  width: 100%;
+  width: 250px;
   height: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #222;
+}
+.card h2{
+  font-size: 33px;
+  padding: 5px;
+  color: #0080ff;
 }
 .card p{
   text-align: center;

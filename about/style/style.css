@@ -83,6 +83,15 @@ h1::after{
   height: 100%;
   background: #0080ff;
 }
+.about-text{
+  display: block;
+  width: 90%;
+  margin: 40px auto;
+  background: #444;
+  color: #ddd;
+  padding: 12px 8px;
+  text-align: center;
+}
 .card{
   width: 100%;
   height:100%;
@@ -94,6 +103,8 @@ h1::after{
 .avatar{
   width: 150px;
   height: 140px;
+  background-size: cover;
+  background-position: center center
 }
 .info{
   padding: 5px;
@@ -102,9 +113,6 @@ h1::after{
   justify-content: flex-start;
   flex-direction: column;
   direction: rtl;
-}
-.info h2{
-  font-family: sans-serif
 }
 .card-container:hover:after{
   transform: rotate(360deg);

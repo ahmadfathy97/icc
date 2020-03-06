@@ -1,51 +1,75 @@
 {
   "team":[
     {
-      "name": "ahmad fathy",
-      "job": "made the website and desktop application",
+      "name": "اسامه صالح",
+      "job": "بناء ذاكرة الوصول العشوائي",
+      "image": "osama.jpg",
+      "position": "member"
+    },
+    {
+      "name": "أحمد عزت",
+      "job": "بناء اللوحة الأم",
+      "image": "ahmad ezzat.jpg",
+      "position": "member"
+    },
+    {
+      "name": "أحمد فتحي",
+      "job": "بناء الموقع والبرنامج",
       "image": "ahmad fathy.jpg",
       "position": "member"
     },
     {
-      "name": "osama saleh",
-      "job": "made the 3d ram",
-      "image": "ahmad fathy.jpg",
+      "name": "مشيرة شعبان",
+      "job": "بناء محرك الاقراص الضوئية",
+      "image": "avatar-girl.png",
       "position": "member"
     },
     {
-      "name": "ahmad fathy",
-      "job": "full stack dev",
-      "image": "ahmad fathy.jpg",
+      "name": "سلمى احمد",
+      "job": "بناء مزود الطاقة",
+      "image": "avatar-girl.png",
       "position": "member"
     },
     {
-      "name": "ahmad fathy",
-      "job": "full stack dev",
-      "image": "ahmad fathy.jpg",
+      "name": "شهاب خالد",
+      "job": "بناء المعالج",
+      "image": "shehab.jpg",
       "position": "member"
     },
     {
-      "name": "ahmad fathy",
-      "job": "full stack dev",
-      "image": "ahmad fathy.jpg",
+      "name": "اسماء رزق",
+      "job": "بناء القرص المرن",
+      "image": "avatar-girl.png",
       "position": "member"
     },
     {
-      "name": "ahmad fathy",
-      "job": "full stack dev",
-      "image": "ahmad fathy.jpg",
+      "name": "نورهان محمد",
+      "job": "بناء مروحة النظام",
+      "image": "avatar-girl.png",
       "position": "member"
     },
     {
-      "name": "ahmad fathy",
-      "job": "full stack dev",
-      "image": "ahmad fathy.jpg",
+      "name": "إسراء محمود",
+      "job": "بناء مروحة المعالج",
+      "image": "avatar-girl.png",
+      "position": "member"
+    },
+    {
+      "name": "إسراء عيد",
+      "job": "بناء القرص الصلب",
+      "image": "avatar-girl.png",
+      "position": "member"
+    },
+    {
+      "name": "د/حمدي احمد",
+      "job": "مشرف على المشروع",
+      "image": "DrHamdy.jpg",
       "position": "supervisor"
     },
     {
-      "name": "ahmad fathy",
-      "job": "full stack dev",
-      "image": "ahmad fathy.jpg",
+      "name": "د/هاني الشيخ",
+      "job": "مشرف على المشروع",
+      "image": "DrHany.jpg",
       "position": "supervisor"
     }
   ]

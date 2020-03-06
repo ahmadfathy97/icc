@@ -88,6 +88,13 @@ body{
   .toggle-nav{
     display:block;
   }
+  .nav-item{
+    width: 100%;
+    border-radius: 0;
+  }
+  .nav-item a{
+    text-align: right
+  }
 }
 .show{
   height: auto

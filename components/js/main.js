@@ -16,6 +16,7 @@ if(name){
         return comp.id == name
       });
       if(comp && comp.length){
+        document.getElementById('comp-load').style.display = "flex";
         //console.log(comp[0].id, name);
         loadobject(comp[0].mtlFile, comp[0].objFile);
         details(comp[0].name, comp[0].description);
@@ -37,10 +38,10 @@ if(name){
       container.innerHTML +=
       `
         <div class="card">
-          <img src="./images/test.jpg" class="card-img-top" width="200" height="200" alt="">
+          <img src="./images/${comp.image}" class="card-img-top" width="200" height="200" alt="">
           <div class="card-body">
             <h3 class="card-title">${comp.name}</h3>
-            <p class="card-text">${comp.description}</p>
+            <p class="card-text">${comp.smallDescription}</p>
             <a href="/components/?name=${comp.id}" class="btn btn-primary">شاهد المكون 3D</a>
           </div>
         </div>
@@ -60,7 +61,7 @@ function details(name, desc){
   infoBtn.style.display = "block";
   compName.textContent = name.toUpperCase();
   objName.textContent = name;
-  objDesc.textContent = desc;
+  objDesc.innerHTML = desc;
 }
 
 function openInfoCon() {
