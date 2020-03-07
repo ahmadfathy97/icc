@@ -3,7 +3,7 @@
     {
       "id":"ram",
       "name": "ram",
-	  "image": "ram.jpg",
+	    "image": "ram.jpg",
       "smallDescription": "ذاكرة الوصول العشوائي بالإنجليزية (Random Access Memory) ويرمز لها اختصاراً بـ RAM، وهي الذاكرة المؤقّتة المستخدمة في تخزين البيانات في الحواسيب، وسميّت بالمؤقّتة نظراً لأنّها تفقد المعلومات والبيانات المخزّنة عليها فور انقطاع التيار الكهربائيّ عنها.",
       "description": "<h2>ذاكرة الوصول العشوائي</h2><p>ذاكرة الوصول العشوائي بالإنجليزية (Random Access Memory) ويرمز لها اختصاراً بـ RAM، وهي الذاكرة المؤقّتة المستخدمة في تخزين البيانات في الحواسيب، وسميّت بالمؤقّتة نظراً لأنّها تفقد المعلومات والبيانات المخزّنة عليها فور انقطاع التيار الكهربائيّ عنها.</p><h2>الوظيفة</h2><p>تؤدّي ذاكرة الوصول العشوائيّ دوراً هامّاً في أداء البرامج، إذ تعمل على الكشف عن المساحة التي يحتاجها البرنامج في ذاكرة الحاسوب لتخزينه عليها، ويلجأ المحترفون عادةً إلى استخدام أكثر أنواع الذاكرة المؤقّتة سِعةً في التخزين نظراً لتعقيد البرامج التي يستخدمونها وما تحتاجه من سعة تخزينيّة كبيرة، وليكون لديهم القدرة أيضاً على زيادة سعتها التخزينية.</p><h2>التسمية ومبدأ العمل</h2><p>سمّيت ذاكرة الوصول العشوائي بهذا الاسم بسبب إمكانيّة وصول المستخدم إلى الخلية المطلوبة بشكلٍ مباشرٍ وعشوائي دون الحاجة إلى التسلسل في الخلايا الموجودة على الذاكرة، وتختلف هذه الذاكرة عن ذاكرة الوصول التسلسلي في مبدأ العمل؛ إذ تشترط الأخيرة ضرورة التسلسل الكامل في الخلايا التخزينية والمرور بها واحدة تلو الأخرى للوصول للخلية المطلوبة، بينما تعمل ذاكرة RAM على مبدأ التقسيم إلى عدّة مواقع؛ ليتمّ تخزين المعلومات والبيانات في مواقع وخلايا خاصّة بها تحمل عنواناً خاصاً بها، فيتم الوصول إلى المعلومة المخزنة فيها بشكل مباشر وفقاً للعنوان الخاص بها، وفي حال الافتقار لعنوان خاصّ بالموقع، فإنّ ذلك سيفرض على المستخدم البحث في كافّة المواقع للوصول إلى المعلومة المراد الحصول عليها.</p><h2> مكوّنات ذاكرة الوصول العشوائي</h2><p>تتكوّن ذاكرة الوصول العشوائي من ملايين الخلايا المكوّنة من قِبل الترانزستورات والمكثفات والتي تشكل بمجموعها دائرة متكاملة من الرقائق، ويؤدي كل منهما وظيفة خاصة به. تؤدي المكثفات دوراً هاماً في ذاكرة الوصول العشوائي؛ حيث يتم تخزين الرقم أو الرمز عليها على شكل Bit وبالتالي يتم الاحتفاظ بقيمة المعلومات فيها، أما دور الترانزيستور فيتمثل بدوره كمفتاح يتحكم بحالة المعلومات المخزنة، فإما أن تتم القراءة للحالة التي يكون عليها المكثف أو تغييرها، كما يعمل الترانزيستور الواحد على تشكيل خلية واحدة فقط من خلايا الذاكرة التي تساوي بت واحداً من البيانات المخزّنة، والبت هي الوحدة الأصغر بين وحدات القياس المستخدمة في الذاكرة، وتقاس سعتها بالميجابايت.</p><h2> أنواع ذاكرة الوصول العشوائي</h2><p>ذاكرة الوصول العشوائي الديناميكية المتزامنة ذات النقل الأحادي، بالإنجليزيةSingle Data Rate Random Acces) Memory) ويرمز لها اختصاراً بـ SD-RAM، يؤدي هذا النوع دوراً هاماً في نقل البيانات بسرعة مقبولة، إلا أنّ عيوبها تكمن بالاستهلاك الكبير للطاقة. ذاكرة الوصول العشوائي الديناميكية المتزامنة ذات النقل الثنائي، بالإنجليزيةDual Data Rate Synchronous Dynamic) Random Access) ويرمز لها اختصاراً بـ DD- RAM، يؤدي هذا النوع دوراً أكثر أهمية من النوع السابق، إذ تقدم للمستخدم إمكانية نقل البيانات بمعدل 2بت / الثانية الواحدة، وتنفرد بقدرتها على تقديم عرض محزم مضاعف للمستخدم، وتوفيرها للطاقة المستخدمة. الخطوط الديناميكية لذاكرة الوصول العشوائي،(Rambus Dynamic Random Access Memory) ويرمز لها اختصاراً بـ RD- RAM، يمتاز هذا النوع بالسرعة العالية جداً، إلّا أنّ ثمنها مرتفع أيضاً، وتستند في أداء عملها على مبدأ توزيع نقل البيانات بين المعالج والذاكرة على أكثر من قناة من خلال تصغير حجم الناقل الأمامي إلى 16 بت، ليصار إلى توزيعه بالتوازي على أكثر من قناة.</p>",
       "objFile": "Ram.obj",
@@ -12,7 +12,7 @@
     {
       "id":"floppy-desk",
       "name": "floppy desk",
-	  "image": "floppy-desk.jpg",
+	    "image": "floppy-desk.jpg",
       "smallDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "objFile": "floppy.obj",
@@ -29,8 +29,8 @@
     },
     {
       "id":"cd-dvd-room",
-      "name": "cd-dvd-room",
-	  "image": "cd-dvd-room.jpg",
+      "name": "cd-dvd room",
+	    "image": "cd-dvd-room.jpg",
       "smallDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "objFile": "cd-dvd-room.obj",
@@ -39,7 +39,7 @@
 	{
       "id":"system-fan",
       "name": "syatem fan",
-	  "image": "system-fan.jpg",
+	    "image": "system-fan.jpg",
       "smallDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "objFile": "system-fan.obj",
@@ -48,7 +48,7 @@
 	{
       "id":"processor-fan",
       "name": "processor fan",
-	  "image": "processor-fan.jpg",
+	    "image": "processor-fan.jpg",
       "smallDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "objFile": "processor-fan.obj",
@@ -57,11 +57,11 @@
     {
       "id":"hard-desk",
       "name": "hard desk",
-	  "image": "hard-desk.jpg",
+	    "image": "hard-desk.jpg",
       "smallDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "objFile": "hdd.obj",
-      "mtlFile": "hdd.mtl"
+      "objFile": "hard-desk.obj",
+      "mtlFile": "hard-desk.mtl"
     }
   ]
 }
