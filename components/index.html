@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>COMPONENTS</title>
+    <title>المكونات</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../assets/headerbg.jpg">
+    <link rel="icon" href="../assets/icc.png">
     <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="./style/style.css">
   </head>
@@ -32,6 +32,7 @@
 
     </div>
     <button class="infoBtn" id="infoBtn">معلومات عن المكون</button>
+
     <div class="info" id="info">
       <div class="head">
         <h2 id="objName"></h2>
@@ -39,13 +40,18 @@
       </div>
       <p id="details"></p>
     </div>
+
     <footer>
-      <p>جميع الحقوق محفوظة &copy; 2020</p>
+      <p>جميع الحقوق محفوظة &copy; <span id="year"></p>
     </footer>
+
     <div id="my-gui-container" class="my-gui-container">
       <button id="toggleControls" data-toggle="hidden">
         التحكم
       </button>
+    </div>
+    <div class="readMore-loader" id="readMore-loader">
+      <div class="spinner"></div>
     </div>
     <div class="load-wrapp" id="load-wrapp">
       <svg width="0" height="0">

@@ -30,7 +30,8 @@ h1::after{
   margin: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  direction: rtl;
+  justify-content: flex-start;
   align-items:center;
   padding: 10px;
   border-right: 10px solid #222;
@@ -40,7 +41,7 @@ h1::after{
 }
 .supervisors-cards{
   margin-bottom: 0;
-  border-bottom: 0;
+  /* border-bottom: 0; */
 }
 .team-cards{
   margin-top: 0;
@@ -97,6 +98,7 @@ h1::after{
   height:100%;
   background: #eee;
   display: flex;
+  direction: ltr;
   align-items: center;
   justify-content: space-between;
 }

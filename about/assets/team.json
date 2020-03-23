@@ -1,9 +1,15 @@
 {
   "team":[
     {
+      "name": "أحمد فتحي",
+      "job": "بناء الموقع والبرنامج",
+      "image": "ahmad fathy.jpg",
+      "position": "member"
+    },
+    {
       "name": "اسامه صالح",
       "job": "بناء ذاكرة الوصول العشوائي",
-      "image": "osama.jpg",
+      "image": "osama-saleh.jpg",
       "position": "member"
     },
     {
@@ -13,15 +19,9 @@
       "position": "member"
     },
     {
-      "name": "أحمد فتحي",
-      "job": "بناء الموقع والبرنامج",
-      "image": "ahmad fathy.jpg",
-      "position": "member"
-    },
-    {
-      "name": "مشيرة شعبان",
-      "job": "بناء محرك الاقراص الضوئية",
-      "image": "avatar-girl.png",
+      "name": "شهاب خالد",
+      "job": "بناء المعالج",
+      "image": "shehab.jpg",
       "position": "member"
     },
     {
@@ -31,9 +31,9 @@
       "position": "member"
     },
     {
-      "name": "شهاب خالد",
-      "job": "بناء المعالج",
-      "image": "shehab.jpg",
+      "name": "مشيرة شعبان",
+      "job": "بناء محرك الاقراص الضوئية",
+      "image": "avatar-girl.png",
       "position": "member"
     },
     {

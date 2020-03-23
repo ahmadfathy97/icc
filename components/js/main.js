@@ -7,7 +7,8 @@ let params = new URLSearchParams(document.location.search.substring(1)),
     info = document.getElementById('info'),
     objName = document.getElementById('objName'),
     objDesc = document.getElementById('details'),
-    closInfo = document.getElementById('closeInfo');
+    closInfo = document.getElementById('closeInfo'),
+    readMoreLoader = document.getElementById('readMore-loader');
 if(name){
     fetch('./data/components.json')
     .then(res => res.json())
@@ -42,14 +43,36 @@ if(name){
           <div class="card-body">
             <h3 class="card-title">${comp.name}</h3>
             <p class="card-text">${comp.smallDescription}</p>
-            <a href="/components/?name=${comp.id}" class="btn btn-primary">شاهد المكون 3D</a>
+            <span href="#" role="button" class="readMore" onclick="readMore('${comp.id}')">قراءة المزيد...</span>
+            <a href="/components/?name=${comp.id}" class="btn-primary">شاهد المكون 3D</a>
           </div>
         </div>
       `
     })
-  })
-}
 
+  });
+
+}
+function readMore(id){
+  readMoreLoader.style.display = 'flex';
+  fetch('./data/components.json')
+  .then(res => res.json())
+  .then((data)=>{
+    let comp = data.components.filter((comp)=>{
+      return comp.id === id
+    });
+    readMoreLoader.style.display = 'none';
+    info.style.display = "flex";
+    objName.textContent = comp[0].name || "خطأ";
+    objDesc.innerHTML = comp[0].description || "حدث خطأ اثناء التحميل من فضلك تأكد أن الانترنت يعمل وأعد المحاولة مرة اخري";
+  }).catch((err)=>{
+    console.log(err);
+    readMoreLoader.style.display = 'none';
+    info.style.display = "flex";
+    objName.textContent = "خطأ";
+    objDesc.innerHTML = "حدث خطأ اثناء التحميل من فضلك تأكد أن الانترنت يعمل وأعد المحاولة مرة اخري";
+  })
+};
 infoBtn.addEventListener('click', openInfoCon);
 closeInfo.addEventListener('click', closeInfoCon);
 
@@ -83,4 +106,4 @@ function toggleControls(){
     guiContainer.classList.remove('show-controls');
     controlsBtn.dataset.toggle = "hidden";
   }
-}
+};
