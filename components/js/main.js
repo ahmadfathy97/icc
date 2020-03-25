@@ -44,7 +44,7 @@ if(name){
             <h3 class="card-title">${comp.name}</h3>
             <p class="card-text">${comp.smallDescription}</p>
             <span href="#" role="button" class="readMore" onclick="readMore('${comp.id}')">قراءة المزيد...</span>
-            <a href="/components/?name=${comp.id}" class="btn-primary">شاهد المكون 3D</a>
+            <a href="./?name=${comp.id}" class="btn-primary">شاهد المكون 3D</a>
           </div>
         </div>
       `
