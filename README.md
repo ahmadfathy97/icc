@@ -1,7 +1,7 @@
 <div dir='rtl'>
 <div align="center" >
   <img src="assets/icc.png" />
-  <h1 dir='ltr'>ICC (Internal Computer Components)</h1>
+  <h1 dir='ltr'><a href="https://ahmadfathy97.github.io/icc/" ICC (Internal Computer Components)</a></h1>
 </div>
 <h2>قائمة المحتويات</h2>
 <ul>
