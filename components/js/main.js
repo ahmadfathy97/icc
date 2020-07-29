@@ -13,14 +13,14 @@ if(name){
     fetch('./data/components.json')
     .then(res => res.json())
     .then((data)=>{
-      let comp = data.components.filter((comp)=>{
+      let comp = data.components.find((comp)=>{
         return comp.id == name
       });
-      if(comp && comp.length){
+      if(comp){
         document.getElementById('comp-load').style.display = "flex";
         //console.log(comp[0].id, name);
-        loadobject(comp[0].mtlFile, comp[0].objFile);
-        details(comp[0].name, comp[0].description);
+        loadobject(comp.mtlFile, comp.objFile);
+        details(comp.name, comp.description);
       } else {
         //console.log('مفيش الكلام ده حضرتك وبطل تلعب في اللينك');
         container.innerHTML =
@@ -58,13 +58,13 @@ function readMore(id){
   fetch('./data/components.json')
   .then(res => res.json())
   .then((data)=>{
-    let comp = data.components.filter((comp)=>{
+    let comp = data.components.find((comp)=>{
       return comp.id === id
     });
     readMoreLoader.style.display = 'none';
     info.style.display = "flex";
-    objName.textContent = comp[0].name || "خطأ";
-    objDesc.innerHTML = comp[0].description || "حدث خطأ اثناء التحميل من فضلك تأكد أن الانترنت يعمل وأعد المحاولة مرة اخري";
+    objName.textContent = comp.name || "خطأ";
+    objDesc.innerHTML = comp.description || "حدث خطأ اثناء التحميل من فضلك تأكد أن الانترنت يعمل وأعد المحاولة مرة اخري";
   }).catch((err)=>{
     console.log(err);
     readMoreLoader.style.display = 'none';
