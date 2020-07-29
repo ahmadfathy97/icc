@@ -32,7 +32,7 @@
   <li>تزويد الكتب الخاصة بالحاسب الآلي برموز الQR التي من خلالها يمكن الوصول للمكون اونلاين</li>
 </ul>
 <h3><a href="#downlaod" id="download">تحميل</a></h3>
-<h4>يمكنك تحميل نسخة اوفلاين للموقع من <a href="" download><b>هنا</b></a>, حوالي 120 ميجا بايت</h4>
+<h4>يمكنك تحميل نسخة اوفلاين للموقع من <a href="https://github.com/ahmadfathy97/icc-desktop-app/releases/download/v0.9.5/ICC.Setup.1.0.0.exe" download><b>هنا</b></a>, حوالي 120 ميجا بايت</h4>
 <h3><a href="#team" id="team">الفريق</a></h3>
 <h4>بناء الموقع والبرنامج</h4>
 <ul>
