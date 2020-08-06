@@ -175,6 +175,29 @@ footer p{
   z-index: -1;
 }
 
+.page-title{
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+.page-title::after, .page-title::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  height: 5px;
+  background: #222
+}
+.page-title::before{
+  bottom: -2px;
+  width: 40%;
+}
+.page-title::after{
+  bottom: -10px;
+  width: 25%;
+  background: #0080ff
+}
+
 @font-face {
   font-family: ElMessiri;
   src: url('../assets/fonts/ElMessiri.ttf');

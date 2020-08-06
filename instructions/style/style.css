@@ -36,7 +36,7 @@ h1::after{
   justify-content: space-around;
   padding: 20px;
   min-height: 100px;
-  background: #eee;
+  /*background: #eee;*/
   flex-wrap: wrap;
   width: 80%;
   margin: 20px auto;

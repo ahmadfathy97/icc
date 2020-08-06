@@ -50,6 +50,7 @@ h1::after{
   height: 250px;
   border-radius: 10px;
   box-shadow: 0 4px 8px #222;
+  background: #f8f8f8;
 }
 .card h2{
   font-size: 33px;
@@ -59,7 +60,11 @@ h1::after{
 .card p{
   text-align: center;
   font-size: 20px;
-  margin: 20px auto;
+  margin: 10px auto;
+}
+.card .hint{
+  font-size: 15px;
+  font-weight: 900;
 }
 .card a{
   text-decoration: none;

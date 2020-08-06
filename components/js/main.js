@@ -39,7 +39,7 @@ if(name){
       container.innerHTML +=
       `
         <div class="card">
-          <img src="./images/${comp.image}" class="card-img-top" width="200" height="200" alt="">
+          <img src="./images/${comp.image}" class="card-img-top" width="200" height="200" title="${comp.name}" alt="${comp.smallDescription}">
           <div class="card-body">
             <h3 class="card-title">${comp.name}</h3>
             <p class="card-text">${comp.smallDescription}</p>

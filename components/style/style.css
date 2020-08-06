@@ -1,29 +1,6 @@
 body{
 background: #fff;
 }
-h1{
-  text-align: center;
-  position: relative;
-  padding: 20px;
-}
-h1::after, h1::before{
-  content: '';
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%,0);
-  height: 5px;
-  background: #222
-}
-h1::before{
-  bottom: -2px;
-  width: 40%;
-}
-h1::after{
-  bottom: -10px;
-  width: 25%;
-  background: #0080ff
-
-}
 .container{
   min-height: 100vh;
   display: flex;
@@ -186,7 +163,7 @@ h1::after{
   transform: translate(-50%,-50%);
   width: 95%;
   height: 95%;
-  background: #ddd;
+  background: #f8f8f8;
   padding: 20px;
   box-shadow: 0 0 20px 5px#222;
   z-index: 99999999999999999;
