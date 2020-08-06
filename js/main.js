@@ -13,6 +13,9 @@ toggleNav.onclick = ()=>{
   }
 }
 window.onload = ()=>{
+  handleLoading();
+}
+function handleLoading() {
   document.body.style.overflow = 'auto';
   load.style.display = 'none';
   let date = new Date();
