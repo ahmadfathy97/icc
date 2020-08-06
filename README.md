@@ -37,42 +37,42 @@
 <h2><a id="download">تحميل</a></h2>
 <h4>يمكنك تحميل نسخة اوفلاين للموقع من <a href="https://github.com/ahmadfathy97/icc-desktop-app/releases/download/v0.9.5/ICC.Setup.1.0.0.exe" download><b>هنا</b></a>, حوالي 120 ميجا بايت</h4>
 <h2><a id="qr">اكواد الQR</a></h2>
-<ul align="center" style="display: flex;flex-wrap: wrap;list-style-type: none">
+<ul>
   <li>
     <h5 >ram</h5>
-    <img src='qr/ram.png' />
+    <img src='QR/ram.png' />
   </li>
   <li>
     <h5>floppy-disk</h5>
-    <img src='qr/floppy-disk.png' />
+    <img src='QR/floppy-disk.png' />
   </li>
   <li>
     <h5>power-supply</h5>
-    <img src='qr/power-supply.png' />
+    <img src='QR/power-supply.png' />
   </li>
   <li>
     <h5>cd-dvd-room</h5>
-    <img src='qr/cd-dvd-room.png' />
+    <img src='QR/cd-dvd-room.png' />
   </li>
   <li>
     <h5>motherboard</h5>
-    <img src='qr/motherboard.png' />
+    <img src='QR/motherboard.png' />
   </li>
   <li>
     <h5>system-fan</h5>
-    <img src='qr/system-fan.png' />
+    <img src='QR/system-fan.png' />
   </li>
   <li>
     <h5>processor</h5>
-    <img src='qr/processor.png' />
+    <img src='QR/processor.png' />
   </li>
   <li>
     <h5>processor-fan</h5>
-    <img src='qr/processor-fan.png' />
+    <img src='QR/processor-fan.png' />
   </li>
   <li>
     <h5>hard-disk</h5>
-    <img src='qr/hard-disk.png' />
+    <img src='QR/hard-disk.png' />
   </li>
 </ul>
 <h2><a id="team">الفريق</a></h2>
