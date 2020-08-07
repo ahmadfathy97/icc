@@ -95,6 +95,6 @@
 }
 @media(max-width: 600px){
   .cards{
-    margin: 50px 2px;
+    margin: 0 2px;
   }
 }
